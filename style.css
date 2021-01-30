@@ -9,9 +9,12 @@
     height: 320px;
     display: flex;
     flex-wrap: wrap;
+    background-color: blue;
 }
 
 .square {
     width: 20px;
     height: 20px;
+    background-color: aquamarine;
+    border: 2px solid red;
 }
