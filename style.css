@@ -4,17 +4,116 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 800px;
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 0 0 20px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    padding: 10px;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: gold;
+    text-shadow: 0 0 10px gray;
+}
+
 .container {
-    width: 320px;
-    height: 320px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+}
+
+.container-border {
+    border: 5px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: gray;
 }
 
 .square {
-    width: 20px;
-    height: 20px;
-    background-color: aquamarine;
-    border: 2px solid red;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
+
+.bottom {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px gray;
+}
+
+.button {
+    width: 90px;
+    height: 50px;
+    outline: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: gold;
+    box-shadow: 0 0 20px gold;
+}
+
+/*RESPONSIVITY*/
+
+@media (max-width: 800px){
+    .box {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    .bottom {
+        width: 80vw;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .button {
+        width: 100px;
+        box-shadow: none;
+        margin: 5px 5px;
+    }
+
+    .circle {
+        width: 0px;
+        height: 0px;
+    }
 }

@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div class="container"></div>
-    <button class="button" type="button">New Grid</button>
+    <div class="box">
+        <div class="top">
+            <h1 class="title">Etch A Sketch</h1>
+        </div>
+        <div class="container-border">
+            <div class="container"></div>
+        </div>
+        <div class="bottom">
+            <div class="circle"></div>
+            <button id="black-button" class="button" type="button">Black</button>
+            <button id="rgb-button" class="button" type="button">RGB</button>
+            <button id="grayscale-button" class="button" type="button">Grayscale</button>
+            <button id="clear-button" class="button" type="button">Clear</button>
+            <button id="grid-button" class="button" type="button">New Grid</button>
+            <div class="circle"></div>
+        </div>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
